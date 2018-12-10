@@ -1,0 +1,23 @@
+<template name="user">
+<div class="page-header text-center">
+            
+    <div class="page-header text-center" style="padding-top: 60px;">
+        <h1>Meteor.js Real-Time Polling Application</h1>
+    </div>
+    </div>
+       {{#if currentUser}}
+       <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                      {{ >pollForm }}
+                  </div>
+              </div>
+          </div>
+          <div class="polls align-center">
+                {{> pollCount}}
+                  {{ #each polls }}
+                      {{ >poll question=this.question choices=this.choices }}
+                  {{ /each }}
+              </div>
+   {{/if}}
+</template>

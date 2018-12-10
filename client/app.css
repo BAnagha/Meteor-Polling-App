@@ -1,0 +1,54 @@
+html, head{
+    margin:0px;
+	padding:0px;
+	
+}
+[name=Poll]{
+    border:none;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    padding:0.15em;
+}
+/* :hover
+	{background-color: #f9f9f9;
+    cursor:pointer;
+}
+
+:focus
+	{background-color: #f9f9f9;
+    cursor:default;
+	outline:none;
+} */
+ body 	{
+	margin:0px;
+    padding:0px;
+} 
+.polls 	{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+.poll 	{
+	width:25%;
+	margin:20px;
+}
+.poll-form 			{
+	margin-bottom:30px; 
+}
+.question-group 	{
+	margin-bottom:20px;
+	background:#EEE;
+	padding:20px;
+}
+.question-group label 	{
+	font-size:18px;
+}
+
+.button {
+    position: absolute;
+	/* top: 50%; */
+	
+}
+.wrapper{
+	text-align:center;
+}
